@@ -1,1 +1,6 @@
-console.log("AI Cursor Assistant Loaded ");
+document.addEventListener("mouseup", () => {
+  const selectedText = window.getSelection().toString().trim();
+  if (selectedText.length > 0) {
+    console.log("selectedText----" + selectedText);
+  }
+});
